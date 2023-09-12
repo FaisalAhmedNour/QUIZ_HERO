@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+    <style>
+        body{
+            font-family: Rubik;
+            margin: 20px 50px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid black ;
+            padding: 4px 10px;
+        }
+        #blog-title{
+            text-align: center;
+        }
+        .list{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="blog-title">Blogs</h2>
+    <section>
+        <article>
+            <h3>
+                1. What's the difference between forEach, map, filter and find?
+            </h3>
+            <div class="list">
+                <p>
+                    <strong>.forEach:</strong>
+                    .forEach(), is used to execute the same code on every element in an array but does not change the array and it returns undefined.
+                </p>
+                <p>
+                    <strong>.map():</strong>
+                    .map() executes the same code on every element in an array and returns a new array with the update elements.
+                </p>
+                <p>
+                    <strong>.filter():</strong>
+                    .filter() checks every element in an array with a given condition and returns a new array with the elements that satisfies.
+                </p>
+                <p>
+                    <strong>.find():</strong>
+                    .find() checks every element in an array with a given condition and returns the first value which satisfies the given condition.
+                </p>
+            </div>
+        </article>
+        <article>
+            <h3>
+                2. What's the difference between Cookies, session storage and local storage? 
+            </h3>
+            <p>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>
+                                <div style="text-align: center;">Local Storage</div>
+                            </th>
+                            <th>
+                                <div style="text-align: center;">Session Storage</div>
+                            </th>
+                            <th>
+                                <div style="text-align: center;">Cookies</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>It allows 10MB of data to be stored.</td>
+                            <td>It allows 5MB of data to be stored.</td>
+                            <td>It allows 4KB of data to be stored.</td>
+                        </tr>
+                        <tr>
+                            <td>The stored data is not deleted when the browser is closed.</td>
+                            <td>The stored data is deleted when the browser is closed.</td>
+                            <td>The data can be set to expire at a certain time.</td>
+                        </tr>
+                        <tr>
+                            <td>This is especially useful for storing data that you want to save even if the user closes the browser.</td>
+                            <td>Session storage is useful for storing data that you want to save until user closes the browser.</td>
+                            <td>Cookies are often used to sent data with the request to the server.</td>
+                        </tr>
+                        <tr>
+                            <td>Local Storage is only available in HTML5.</td>
+                            <td>Session Storage is also only available in HTML5.</td>
+                            <td>Cookies are also available in HTML4.</td>
+                        </tr>
+                        <tr>
+                            <td>The data is stored on the browser and system.</td>
+                            <td>The data is stored on the browser only.</td>
+                            <td>The data is stored on the browser only.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+        </article>
+        <article>
+            <h3>
+                3. How dose event loop work?
+            </h3>
+            <p>
+                The program starts running and initializes the event loop. The event loop starts running and waits for an event to occur. When an event occurs, it is added to a queue of pending events and after completing the event if occurs.The event loop continues to run indefinitely until all events occurs. 
+            </p>
+        </article>
+        <article>
+            <h3>
+                4. How dose quizTimer() function work?
+            </h3>
+            <p>
+                It is a Arrow function with one parameter. At first it checks if the parameter is truthy or falsy. If truthy it will call an other function called setInterval() with one parameter. In the setInterval function it counts the time and display it as a timer.
+            </p>
+        </article>
+        <article>
+            <h3>
+                3. How dose chooseQuiz() function work?
+            </h3>
+            <p>
+                It is a arrow function with two parameters. First it checks if quiz is already selected or not. if selected it selects it again else add this to answers.
+                At last call another function called displayAnswers.
+            </p>
+        </article>
+
+    </section>
+</body>
+</html>
